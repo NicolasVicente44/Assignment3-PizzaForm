@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pizza Maker</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./javascript/main.js"></script>
+  </head>
+  <body>
+    <p id="student">Nicolas Vicente - 200539594</p>
+
+    <h1>Mamma Mia Pizzeria</h1>
+    <form id="pizza-form" action="">
+      <label for="quantity">Quantity:</label>
+      <input placeholder="1, 2, 3..." type="text" id="quantity" />
+
+      <p>Choose Your Pizza Size:</p>
+
+      <div id="size-grid">
+        <label class="labels" for="small">Small</label>
+        <input id="small" name="pizza-size" type="radio" value="small" />
+
+        <label for="medium">Medium</label>
+        <input id="medium" name="pizza-size" type="radio" value="medium" />
+
+        <label for="large">Large</label>
+        <input id="large" name="pizza-size" type="radio" value="large" />
+
+        <label for="extra-large">Extra Large</label>
+        <input
+          id="extra-large"
+          name="pizza-size"
+          type="radio"
+          value="extra-large"
+        />
+      </div>
+
+      <label for="crust-type">Choose Your Crust Type:</label>
+      <select name="crust-type" id="crust-type">
+        <option value="" disabled selected>Select Crust Type</option>
+        <option value="thick-crust">Thick Crust</option>
+        <option value="deep-dish">Deep Dish</option>
+        <option value="thin-crust">Thin Crust</option>
+        <option value="cheese-crust">Cheese Crust</option>
+      </select>
+
+      <label for="cheese-type">Choose Your Cheese Type:</label>
+      <select name="cheese-type" id="cheese-type">
+        <option value="" disabled selected>Select Cheese Type</option>
+        <option value="cheddar">Cheddar</option>
+        <option value="mozzarella">Mozzarella</option>
+        <option value="feta">Feta</option>
+        <option value="parm">Parmesan</option>
+        <option value="no">No</option>
+      </select>
+
+      <p>Choose Your Pizza Toppings:</p>
+
+      <div class="toppings-grid">
+        <label for="pepperoni">Pepperoni</label>
+        <input
+          type="checkbox"
+          name="topping"
+          id="pepperoni"
+          value="pepperoni"
+        />
+
+        <label for="mushrooms">Mushrooms</label>
+        <input
+          type="checkbox"
+          name="topping"
+          id="mushrooms"
+          value="mushrooms"
+        />
+
+        <label for="onions">Onions</label>
+        <input type="checkbox" name="topping" id="onions" value="onions" />
+
+        <label for="olives">Olives</label>
+        <input type="checkbox" name="topping" id="olives" value="olives" />
+
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" name="topping" id="sausage" value="sausage" />
+
+        <label for="bacon">Bacon</label>
+        <input type="checkbox" name="topping" id="bacon" value="bacon" />
+
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" name="topping" id="chicken" value="chicken" />
+
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" name="topping" id="tomato" value="tomato" />
+
+        <label for="pineapple">Pineapple</label>
+        <input
+          type="checkbox"
+          name="topping"
+          id="pineapple"
+          value="pineapple"
+        />
+      </div>
+
+      <label for="textbox">Special Instructions:</label>
+      <textarea
+        placeholder="Your instructions here..."
+        name="special-instructions"
+        id="textbox"
+        cols="60"
+        rows="15"
+      ></textarea>
+
+      <input type="submit" id="submit-btn" value="Order Now!" />
+    </form>
+
+    <div id="modal-overlay">
+      <div id="modal-content">
+        <h2>Order Confirmation</h2>
+        <p id="output"></p>
+        <button id="close-btn">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
